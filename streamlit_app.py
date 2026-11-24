@@ -49,7 +49,7 @@ else:
         with st.chat_message("assistant"):
             try:
                 response = client.models.generate_content_stream(
-                    model="gemini-2.5-flash",
+                    model="gemini-3.8-flash",
                     contents=[
                         {
                             "role": "user" if m["role"] == "user" else "model",
